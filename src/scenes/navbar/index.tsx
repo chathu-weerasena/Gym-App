@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "@/assets/Logo.png";
 import Link from "./Link";
+import { SelectedPage } from "@/shared/types";
 
 type Props = {
-  selectedPage: string;
+  selectedPage: SelectedPage;
   setSelectedPage: (value: string) => void;
 };
 
@@ -45,7 +46,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
               {/* INNER RIGHT SIDE */}
               <div className={`${flexBetween} gap-8`}>
                 <p>Sign In</p>
-                <button> Become a Member</button>
+                <button>Become a Member</button>
               </div>
             </div>
           </div>
