@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import SponsorRedBull from "@/assets/SponsorRedBul.png";
+import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 
@@ -27,32 +27,34 @@ const Home = ({ setSelectedPage }: Props) => {
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
+
             <p className="mt-8 text-sm">
               {" "}
               Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Studios to get the Body Shapes That you Dream of. Get Your Dream
               Body Now.
             </p>
-            {/* ACTIONS */}
-            <div className="mt-8 flex items-center gap-8 md:justify-start">
-              <ActionButton setSelectedPage={setSelectedPage}>
-                Join Now
-              </ActionButton>
-              <AnchorLink
-                className="text-sm font-bold text-primary-500 underline hover:text-secondary-500 "
-                onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-                href={`#${SelectedPage.ContactUs}`}
-              >
-                <p>Learn More</p>
-              </AnchorLink>
-            </div>
           </div>
-          {/* IMAGE */}
-          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
-            <img alt="home-pageGraphic" src={HomePageGraphic}></img>
+          {/* ACTIONS */}
+          <div className="mt-8 flex items-center gap-8 md:justify-start">
+            <ActionButton setSelectedPage={setSelectedPage}>
+              Join Now
+            </ActionButton>
+            <AnchorLink
+              className="text-sm font-bold text-primary-500 underline hover:text-secondary-500 "
+              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+              href={`#${SelectedPage.ContactUs}`}
+            >
+              <p>Learn More</p>
+            </AnchorLink>
           </div>
         </div>
+        {/* IMAGE */}
+        <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
+          <img alt="home-pageGraphic" src={HomePageGraphic}></img>
+        </div>
       </div>
+
       {/* SPONSORS */}
       <div className="h-[150px] w-full bg-primary-100 py-10">
         <div className="mx-auto w-5/6">
