@@ -97,16 +97,34 @@ const Benefits = ({ setSelectedPage }: Props) => {
             {/* TITLE */}
             <div className="relative">
               <div className="before:z-[-1]before:absolute before:-top-20 before:-left-20 md:before:content-abstractwaves">
-                <div className="relative">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
                   <Heading>
                     MILLIONS OF HAPPY MEMBERS GETTING {""}
                     <span className="text-primary-500">FIT</span>.
                   </Heading>
-                </div>
+                </motion.div>
               </div>
             </div>
             {/* DESCRIPTION */}
-            <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
               <p className="my-5">
                 Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
                 egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
@@ -121,11 +139,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
                 enim mattis odio in risus nunc.
               </p>
-            </div>
+            </motion.div>
 
             {/* BUTTON */}
             <div className="relative mt-16">
-              <div className="before:absolute before:bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+              <div className="before:absolute before:bottom-20 before:right-40 before:z-[-1] after:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
                   Join Now
                 </ActionButton>
