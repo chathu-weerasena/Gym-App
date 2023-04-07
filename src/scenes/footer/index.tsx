@@ -17,11 +17,16 @@ const Footer = (props: Props) => {
         </div>
         <div className="mt-16 basis-1/4 md:-mt-0">
           <h4 className="font-bold">Links</h4>
-          <p className="my-5">Massa orci senectus</p>
-          <p className="my-5">Et gravida id et etiam</p>
-          <p>Ullamcorper vivamus</p>
+          <p className="my-5">Yoga Classes</p>
+          <p className="my-5">Children care</p>
+          <p>Packages</p>
         </div>
-        <div></div>
+        <div className="mt-16 basis-1/4 md:mt-0">
+          <h4 className="font-bold">Contact Us</h4>
+          <p className="my-5">For healthy life style</p>
+          <p className="my-5">For healthy body</p>
+          <p>(3333)454-565</p>
+        </div>
       </div>
     </footer>
   );
