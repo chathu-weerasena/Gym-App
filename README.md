@@ -4,7 +4,7 @@ This my first application developed using TypeScript after learning basics.
 
 This is an Application for a Fittness Center users. 
 
-Bsic version has Home Page, Benefits Page, Contact Page(Not yet compeleted). 
+Bsic version has Home Page, Benefits Page, Contact Page. 
 
 ## Tech Stack:
 
